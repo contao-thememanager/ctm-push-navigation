@@ -136,27 +136,31 @@
       }
     }
   }
+
+  .pn-breadcrumb {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    font-size: 20px;
+    line-height: 1.2;
+
+    i:before {
+      font-size: 16px;
+    }
+  }
 }
 
-.pn-breadcrumb {
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
-  font-size: 20px;
-  line-height: 1.2;
-
-  i:before {
-    font-size: 16px;
-  }
+.pn-breadcrumb,
+.pn-handle {
+  color: var(--pn-bc-clr);
 }
 
 .pn-handle,
 .pn-active > .pn-breadcrumb {
   cursor: pointer;
-  color: var(--pn-bc-clr);
 
   &:hover {
     color: var(--pn-bc-clr-hvr);
