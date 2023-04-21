@@ -1,0 +1,75 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="contao/languages/en/tl_thememanager.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_thememanager.push_navigation_legend">
+        <source>Push-Navigation</source>
+        <target>Push-Navigation</target>
+      </trans-unit>
+
+      <trans-unit id="tl_thememanager.pn-background.0">
+        <source>$pn-background</source>
+        <target>$pn-background</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-background.1">
+        <source>Here you can set the background-color for the mobile navigation.</source>
+        <target>Hier können Sie die Hintergrundfarbe der mobilen Navigation einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-border-bottom-color.0">
+        <source>$pn-border-bottom-color</source>
+        <target>$pn-border-bottom-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-border-bottom-color.1">
+        <source>Here you can set the bottom border-color for mobile navigation items.</source>
+        <target>Hier können Sie die untere Rahmen-Farbe (border-color) der mobilen Navigationselemente einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-breadcrumb-color.0">
+        <source>$pn-breadcrumb-color</source>
+        <target>$pn-breadcrumb-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-breadcrumb-color.1">
+        <source>Here you can set the text color for mobile navigation breadcrumbs.</source>
+        <target>Hier können Sie die Schriftfarbe der mobilen Navigationsbrotkrümel einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-breadcrumb-color-hover.0">
+        <source>$pn-breadcrumb-color-hover</source>
+        <target>$pn-breadcrumb-color-hover</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-breadcrumb-color-hover.1">
+        <source>Here you can set the text color for mobile navigation breadcrumbs when hovered.</source>
+        <target>Hier können Sie die Schriftfarbe der mobilen Navigationsbrotkrümel beim hovern einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-item-font-size.0">
+        <source>$pn-item-font-size</source>
+        <target>$pn-item-font-size</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-item-font-size.1">
+        <source>Here you can set the font-size for mobile navigation items.</source>
+        <target>Hier können Sie die Schriftgröße der mobilen Navigationselemente einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-item-font-weight.0">
+        <source>$pn-item-font-weight</source>
+        <target>$pn-item-font-weight</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-item-font-weight.1">
+        <source>Here you can set the font-weight for mobile navigation items.</source>
+        <target>Hier können Sie die Schriftdicke (font-weight) der mobilen Navigationselemente einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-item-color.0">
+        <source>$pn-item-color</source>
+        <target>$pn-item-color</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-item-color.1">
+        <source>Here you can set the text color for mobile navigation items.</source>
+        <target>Hier können Sie die Schriftfarbe der mobilen Navigationselemente einstellen.</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-item-color-active.0">
+        <source>$pn-item-color-active</source>
+        <target>$pn-item-color-active</target>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.pn-item-color-active.1">
+        <source>Here you can set the active text color for mobile navigation items.</source>
+        <target>Hier können Sie die aktive Schriftfarbe der mobilen Navigationselemente einstellen.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,11 @@
+:root {
+  // Push navigation
+  --pn-bg:#{$pn-background};
+  --pn-bdr:#{$pn-border-bottom-color};
+  --pn-bc-clr:#{$pn-breadcrumb-color};
+  --pn-bc-clr-hvr:#{$pn-breadcrumb-color-hover};
+  --pn-i-clr:#{$pn-item-color};
+  --pn-i-clr-a:#{$pn-item-color-active};
+  --pn-i-fw:#{$pn-item-font-weight};
+  --pn-i-fs:#{$pn-item-font-size};
+}

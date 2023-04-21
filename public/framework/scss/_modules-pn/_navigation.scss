@@ -1,0 +1,174 @@
+.pn-init {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity .3s, background-color .3s;
+
+  &.pn-show {
+    padding-top: var(--hdr-hght);
+
+    visibility: visible;
+    opacity: 1;
+
+    background: var(--pn-bg);
+    transition-delay: 0s;
+    overflow-y: auto;
+
+    backdrop-filter: blur(3px);
+    z-index: 1;
+
+    pointer-events: auto;
+
+    li {
+      opacity: 1;
+      border-bottom-color: var(--pn-bdr);
+    }
+  }
+
+  > div {
+    width: 100%;
+  }
+
+  ul {
+    position: relative;
+    box-sizing: border-box;
+
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+
+    transition: transform .3s;
+
+    ul {
+      position: absolute;
+      top: 0;
+      left: 100%;
+
+      opacity: 0;
+      transition: opacity 0.2s, transform 0.3s;
+
+      li {
+        pointer-events: none;
+      }
+    }
+  }
+
+  li {
+    display: block;
+    margin: 0;
+    opacity: 0;
+    transition: opacity .2s, transform .3s;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    &.submenu {
+      padding-right: 50px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  a,
+  strong {
+    animation: none !important;
+    font-size: var(--pn-i-fs);
+    font-weight: var(--pn-i-fw);
+    line-height: 1.3;
+
+    padding: 10px 0;
+    display: inline-block;
+    width: 95%;
+
+    color: var(--pn-i-clr);
+
+    &.active,
+    &:hover {
+      color: var(--pn-i-clr-a);
+    }
+  }
+
+  .pn-active:not(.pn-next),
+  .level_1:not(.pn-next):not(.pn-active) {
+
+    li {
+      @for $i from 1 through 20 {
+        &:nth-of-type(#{$i}) {
+          transition-delay: unquote('#{$i*80}ms');
+        }
+      }
+    }
+  }
+}
+
+.pn-active,
+.pn-next {
+  z-index: 1;
+  opacity: 1;
+
+  li {
+    pointer-events: auto;
+  }
+}
+
+.pn-handle {
+  position: absolute;
+  right: 30px;
+
+  font-size: 20px;
+  line-height: 1;
+
+  padding: 13px 5px 13px 16px;
+}
+
+.pn-next {
+  transform: translateX(-100%);
+}
+
+.pn-breadcrumb {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  font-size: 20px;
+  line-height: 1.2;
+
+  i:before {
+    font-size: 16px;
+  }
+}
+
+.pn-handle,
+.pn-active > .pn-breadcrumb {
+  cursor: pointer;
+  color: var(--pn-bc-clr);
+
+  &:hover {
+    color: var(--pn-bc-clr-hvr);
+  }
+}
+
+.pn-toggle {
+  position: relative;
+  display: none;
+  z-index: 200;
+
+  &.pn-show {
+    display: block;
+  }
+}
