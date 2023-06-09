@@ -49,9 +49,10 @@
 
       color: var(--pn-i-clr);
 
+      &.trail,
       &.active,
       &:hover {
-        color: var(--pn-i-clr-a);
+        color: var(--pn-i-clr-a) !important;
       }
     }
   }
