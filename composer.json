@@ -1,6 +1,6 @@
 {
     "name": "contao-thememanager/ctm-push-navigation",
-    "type": "contao-bundle",
+    "type": "symfony-bundle",
     "description": "Push navigation integration for Contao Theme-Manager",
     "keywords": ["contao","theme","navigation", "mobile"],
     "homepage": "https://www.oveleon.de/thememanager.html",
