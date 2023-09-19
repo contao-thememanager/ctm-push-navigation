@@ -9,25 +9,25 @@
             'default'                 => 'rgba(255,255,255,.85)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['pn-background'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'rgba(255,255,255,.85)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+            'eval'                    => ['placeholder'=>'rgba(255,255,255,.85)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
         ],
         'pn-border-bottom-color' => [
             'default'                 => 'rgba(49,49,49,.3)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['pn-border-bottom-color'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'rgba(49,49,49,.3)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+            'eval'                    => ['placeholder'=>'rgba(49,49,49,.3)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
         'pn-breadcrumb-color' => [
             'default'                 => '424242',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['pn-breadcrumb-color'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'424242', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+            'eval'                    => ['placeholder'=>'424242', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
         'pn-breadcrumb-color-hover' => [
             'default'                 => 'var(--clr-primary)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['pn-breadcrumb-color-hover'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
 
         'pn-item-font-size' => [
@@ -35,25 +35,25 @@
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['pn-item-font-size'],
             'inputType'               => 'inputUnit',
             'options'                 => $GLOBALS['CTM_CSS_UNITS'],
-            'eval'                    => ['placeholder'=>'20px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>32, 'tl_class'=>'w25 clr'],
+            'eval'                    => ['placeholder'=>'20px', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25 clr'],
         ],
         'pn-item-font-weight' => [
             'default'                 => 'var(--fw-base)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['pn-item-font-weight'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--fw-base)', 'maxlength'=>32, 'decodeEntities'=>true, 'tl_class'=>'w25'],
+            'eval'                    => ['placeholder'=>'var(--fw-base)', 'maxlength'=>255, 'decodeEntities'=>true, 'tl_class'=>'w25'],
         ],
         'pn-item-color' => [
             'default'                 => 'var(--text-clr-base)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['pn-item-color'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--text-clr-base)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+            'eval'                    => ['placeholder'=>'var(--text-clr-base)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ],
         'pn-item-color-active' => [
             'default'                 => 'var(--clr-primary)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['pn-item-color-active'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>64, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
+            'eval'                    => ['placeholder'=>'var(--clr-primary)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard'],
         ]
     ]
 ];
