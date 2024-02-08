@@ -1,8 +1,14 @@
 <?xml version="1.0" ?><xliff version="1.1">
   <file datatype="php" original="contao/languages/en/tl_thememanager.php" source-language="en">
     <body>
-      <trans-unit id="tl_thememanager.push_navigation_legend">
-        <source>Push-Navigation</source>
+      <trans-unit id="tl_thememanager.push_navigation_header">
+        <source>Erweiterung: Push-Navigation</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.push_navigation_color_legend">
+        <source>Colors</source>
+      </trans-unit>
+      <trans-unit id="tl_thememanager.push_navigation_link_legend">
+        <source>Links</source>
       </trans-unit>
 
       <trans-unit id="tl_thememanager.pn-background.0">
