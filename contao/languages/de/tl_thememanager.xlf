@@ -2,7 +2,7 @@
   <file datatype="php" original="contao/languages/en/tl_thememanager.php" source-language="en" target-language="de">
     <body>
       <trans-unit id="tl_thememanager.push_navigation_header">
-        <source>Erweiterung: Push-Navigation</source>
+        <source>Extension: Push-Navigation</source>
         <target>Erweiterung: Push-Navigation</target>
       </trans-unit>
       <trans-unit id="tl_thememanager.push_navigation_color_legend">
