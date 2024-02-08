@@ -1,8 +1,8 @@
 <?php return [
     'palettes' => [
         'default'  =>
-            '{push_navigation_color_legend:hide ctm-group palette-group[push_navigation_header]},pn-background,pn-border-bottom-color,pn-breadcrumb-color,pn-breadcrumb-color-hover,pn-item-font-size,pn-item-font-weight,pn-item-color,pn-item-color-active;' .
-            '{push_navigation_link_legend:hide},pn-background,pn-border-bottom-color,pn-breadcrumb-color,pn-breadcrumb-color-hover,pn-item-font-size,pn-item-font-weight,pn-item-color,pn-item-color-active;'
+            '{push_navigation_color_legend:hide ctm-group palette-group[push_navigation_header]},pn-background,pn-border-bottom-color,pn-breadcrumb-color,pn-breadcrumb-color-hover;' .
+            '{push_navigation_link_legend:hide},pn-item-font-size,pn-item-font-weight,pn-item-color,pn-item-color-active;'
     ],
     'fields'   => [
         // Push navigation
