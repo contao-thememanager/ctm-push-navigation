@@ -1,5 +1,5 @@
 // Push navigation
-$pn-background:             rgba(255,255,255,.85) !default;
+$pn-background:             rgba(var(--body-bg-rgb),.85) !default;
 $pn-border-bottom-color:    rgba(49,49,49,.3) !default;
 $pn-breadcrumb-color:       #424242 !default;
 $pn-breadcrumb-color-hover: var(--clr-primary) !default;

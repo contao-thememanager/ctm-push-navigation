@@ -7,10 +7,10 @@
     'fields'   => [
         // Push navigation
         'pn-background' => [
-            'default'                 => 'rgba(255,255,255,.85)',
+            'default'                 => 'rgba(var(--body-bg-rgb),.85)',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['pn-background'],
             'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'rgba(255,255,255,.85)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
+            'eval'                    => ['placeholder'=>'rgba(var(--body-bg-rgb),.85)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w25 wizard clr'],
         ],
         'pn-border-bottom-color' => [
             'default'                 => 'rgba(49,49,49,.3)',
