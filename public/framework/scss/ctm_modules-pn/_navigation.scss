@@ -195,3 +195,10 @@
     color: var(--pn-bc-clr-hvr);
   }
 }
+
+@media (min-width: $navigation-behaviour-min-width) {
+
+  .pn-to-menu {
+    display: none;
+  }
+}
