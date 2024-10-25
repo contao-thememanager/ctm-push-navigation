@@ -1,0 +1,22 @@
+.pn-btn {
+  all: unset;
+
+  &:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+  }
+}
+
+.pn-toggle {
+  --btn-1-bg: transparent;
+  --btn-1-bg-hvr: transparent;
+  --btn-bdr: none;
+  --btn-p-2: 0;
+
+  position: relative;
+  display: none;
+  z-index: 200;
+
+  &.pn-show {
+    display: block;
+  }
+}

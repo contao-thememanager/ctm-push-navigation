@@ -1,5 +1,5 @@
 /.github export-ignore
 /.gitignore export-ignore
-/docs export-ignore
-/tests export-ignore
-/bin export-ignore
+/.editorconfig export-ignore
+/package.json export-ignore
+/assets export-ignore

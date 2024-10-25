@@ -1,4 +1,9 @@
 .pn-init {
+  --btn-1-bg: transparent;
+  --btn-1-bg-hvr: transparent;
+  --btn-bdr: none;
+  --btn-p-2: 0;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -36,8 +41,7 @@
       border-bottom-color: var(--pn-bdr);
     }
 
-    a,
-    strong {
+    :is(a:not(.invisible), strong, .pn-breadcrumb) {
       animation: none !important;
       font-size: var(--pn-i-fs);
       font-weight: var(--pn-i-fw);
@@ -45,15 +49,21 @@
 
       padding: 10px 0;
       display: inline-block;
-      width: 95%;
+      width: 100%;
 
       color: var(--pn-i-clr);
 
-      &.trail,
-      &.active,
-      &:hover {
+      &.submenu {
+        width: 95%;
+      }
+
+      &:is(.trail,.active,:hover) {
         color: var(--pn-i-clr-a) !important;
       }
+    }
+
+    .invisible {
+      display: none;
     }
   }
 
@@ -102,6 +112,10 @@
     }
   }
 
+  ul:not(.pn-active:not(.pn-next)) > li > :is(a, button) {
+    visibility: hidden;
+  }
+
   .pn-active,
   .pn-next {
     z-index: 1;
@@ -139,18 +153,32 @@
   }
 
   .pn-breadcrumb {
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
-    font-size: 20px;
-    line-height: 1.2;
+    text-align: left;
 
     i:before {
       font-size: 16px;
     }
+  }
+}
+
+.pn-to-menu {
+  position: absolute;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0 !important;
+  width: 1px !important;
+
+  &:focus {
+    left: 30px;
+    right: 30px;
+    height: revert;
+    overflow: visible;
+    clip: revert;
+    margin-top: 8px;
+    width: revert !important;
   }
 }
 
@@ -165,15 +193,5 @@
 
   &:hover {
     color: var(--pn-bc-clr-hvr);
-  }
-}
-
-.pn-toggle {
-  position: relative;
-  display: none;
-  z-index: 200;
-
-  &.pn-show {
-    display: block;
   }
 }
