@@ -199,6 +199,6 @@
 @media (min-width: $navigation-behaviour-min-width) {
 
   .pn-to-menu {
-    display: none;
+    display: none !important;
   }
 }
