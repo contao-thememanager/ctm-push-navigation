@@ -1,9 +1,5 @@
 .pn-btn {
-  all: unset;
-
-  &:focus-visible {
-    outline: -webkit-focus-ring-color auto 1px;
-  }
+  border-radius: unset;
 }
 
 .pn-toggle {
@@ -15,6 +11,7 @@
   position: relative;
   display: none;
   z-index: 200;
+  border-radius: unset;
 
   &.pn-show {
     display: block;
